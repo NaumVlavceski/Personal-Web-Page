@@ -1,0 +1,50 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body class="container">
+<nav class="navbar navbar-expand-md navbar-light">
+
+    <div class="container-fluid">
+        <img src="{% static 'photos/Light_Naum.png' %}" class="img-fluid logo" alt="NaumLogo"
+             style="width: 120px; height: 30px;">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class=" nav-link active" onclick="home(this)">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="about_me(this)">About me</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <a href="{% url 'contact' %}" >
+        <button class="btn btn-success " id="contact_me" type="submit">Contact me</button>
+    </a>
+    <a class="btn dark-light" onclick="change_theme()"><i class="fa-solid fa-sun"></i></a>
+
+</nav>
+
+{% block index %}
+{% endblock %}
+
+</body>
+<script src="{% static 'js/main.js' %}">
+
+</script>
+</html>

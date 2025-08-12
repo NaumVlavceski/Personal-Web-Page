@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block index %}
+    <div id="home" class="section active">
+
+
+        <div class="row align-items-center pt-5">
+            <div class="col-md-6">
+                <h2>Здраво, јас сум</h2>
+                <img src="../static/photos/Light_Naum.png" class="img-fluid logo" alt="NaumLogo" style="width: 200px;
+            height: 44.56px;">
+                <p class="p-0 pt-3">Студент сум на ФИНКИ, насока Примена на информатика и технологии (ПИТ), со фокус на
+                    софтверски инженеринг и
+                    веб-развој. Имам практично искуство со Python, Java, JavaScript, Spring Boot, Django и PostgreSQL,
+                    стекнато
+                    преку академски проекти и самостојно учење. Мотивиран сум да продолжам со надградување на своите
+                    вештини
+                    и
+                    сум отворен за практикантства и можности за професионален развој.</p>
+            </div>
+            <div class="col">
+                <img src="{% static 'photos/Naum.png' %}" class="img-fluid" alt="Profile image">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="about_me" class="section">
+
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <img src="{% static 'photos/Naum.png' %}" class="img-fluid" alt="Profile image">
+            </div>
+
+            <div class="col-md-6" style="padding-top: 50px">
+                <h2 class="mb-4">👨‍💻 За Мене</h2>
+                <p><strong>Наум Влавчески</strong> – студент на <strong>ФИНКИ</strong>, насока <em>Примена на
+                    информатика и
+                    технологии (ПИТ)</em>. Фокусиран на софтверски инженеринг и веб-развој.</p>
+
+                <h4 class="mt-4">💼 Вештини</h4>
+                <ul>
+                    <li><strong>Јазици:</strong> Python, Java, JavaScript</li>
+                    <li><strong>Фрејмворци:</strong> Spring Boot, Django</li>
+                    <li><strong>Фронт-енд:</strong> HTML, CSS, Bootstrap</li>
+                    <li><strong>Бази:</strong> PostgreSQL, MySQL</li>
+                    <li><strong>Контрола на верзии:</strong> Git, GitHub</li>
+                    <li><strong>DevOps:</strong> Docker</li>
+                </ul>
+
+                <h4 class="mt-4">📚 Образование</h4>
+                <p><strong>ФИНКИ – Факултет за информатички науки и компјутерско инженерство</strong><br>
+                    Насока: Примена на информатика и технологии (ПИТ)<br>
+                    Студент на 4-та година
+                </p>
+
+                <h4 class="mt-4">🧪 Проекти</h4>
+                <ul>
+                    <li><strong>Систем за библиотека</strong> – Java + PostgreSQL</li>
+                    <li><strong>Резервации настани</strong> – Django + Bootstrap</li>
+                    <li><strong>Личен блог</strong> – Flask / HTML & CSS</li>
+                </ul>
+
+                <h4 class="mt-4">🎯 Цели</h4>
+                <p>Барам практикантска позиција или почетна улога каде можам да придонесувам и да учам.</p>
+
+                <h4 class="mt-4">📫 Контакт</h4>
+                <div class="mb-3">
+                    <a href="https://github.com/NaumVlavceski" class="icon-wrapper" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="https://linkedin.com/in/naum-vlavcheski" class="icon-wrapper" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="tel:+389072231589" class="icon-wrapper" target="_blank">
+                        <div class="tooltip-text">072/231-589</div>
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

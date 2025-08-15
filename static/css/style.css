@@ -7,9 +7,6 @@
     --active-color: black;
     --label-color: black;
 }
-input{
-    background: darkblue;
-}
 body.dark {
     --body-bg-color: linear-gradient(135deg, #08282e 0%, #004d40 50%, #000000 100%);
     --h2-color: white;
